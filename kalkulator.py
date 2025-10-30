@@ -65,7 +65,11 @@ elif komenda == 'mnożenie':
                 print('mozesz dodac maksymalnie 5 czynnikow, więc: ')
     iloczyn = int(iloczyn)
     print(f'wynik twojego mnozenia to  {iloczyn}' )
-
+elif komenda == 'odejmowanie':
+    a = float(input('podaj odjemną'))
+    b = float(input('podaj odjemnik'))
+    roznica = odejmowanie(a, b)
+    print(f'wynikiem odejmowanie jest {roznica}')
 
 
 
