@@ -1,78 +1,84 @@
-komenda = input('podaj komende ')
+command = input('write a command ')
 
-komendy =["dodawanie",
-          "odejmowanie",
-          "mnożenie",
-          "dzielenie",
-          "potęgowanie",
-          "pierwiastkowanie",
-          "liczenie procentów",
-          "logarytmy",
-          "wspólny punkt dwóch prostych",
-          "liczby pierwsze",
-          "nwd",
-          "nww",
-          "?"]
-
-
-
-
+commands = [
+    "summing",
+    "subtraction",
+    "multiplication",
+    "division",
+    "exponentiation",
+    "root extraction",
+    "percentage calculation",
+    "logarithms",
+    "intersection point of two lines",
+    "prime numbers",
+    "gcd",
+    "lcm",
+    "?"
+]
 
 
-def dodawanie(a, b):
-      suma = a+b
-      return suma
-def odejmowanie(a,b ):
-      różnica = a-b
-      return różnica
-def dzielenie(a, b):
-      iloraz = a/b
-      return iloraz
-def potegowanie(a, b):
-    potega = a**b
-    return potega
+def summing(a, b):
+    total = a + b
+    return total
+def subtraction(a, b):
+    difference = a - b
+    return difference
+def division(a, b):
+    quotient = a / b
+    return quotient
+def exponentiation(a, b):
+    power = a ** b
+    return power
 
-if komenda in komendy:
-    if komenda == 'dodawanie':
-      a = float(input('podaj pierwszy składnik  '))
-      b = float(input('podaj drugi składnik  '))
-      dodawanie(a, b)
-      suma = dodawanie(a, b)
-      print(f'twoj wynik to {suma}')
-    elif komenda == 'mnożenie':
-        obecnaliczba = 0
-        ilosc = int(input('ile liczb chcesz pomnożyć przez siebie?  '))
-        wynik = 1
-        for y in range(ilosc):
-            obecnaliczba += 1
-            liczba = int(input(f'podaj liczbe numer {obecnaliczba} '))
-            wynik *= liczba
-        print(f'wynik twojego mnozenia to  {wynik}' )
-    elif komenda == 'odejmowanie':
-        a = float(input('podaj odjemną'))
-        b = float(input('podaj odjemnik'))
-        roznica = odejmowanie(a, b)
-        print(f'wynikiem odejmowanie jest {roznica}')
-    elif komenda == "?":
-        print("""dodawanie
-          odejmowanie
-          mnożenie
-          dzielenie
-          potęgowanie
-          pierwiastkowanie
-          liczenie procentów
-          logarytmy
-          wspólny punkt dwóch prostych
-          liczby pierwsze
-          nwd
-          nww""")
+if command in commands:
+    if command == 'summing':
+        a = float(input('Provide the first addend: '))
+        b = float(input('Provide the second addend: '))
+        summing(a, b)
+        summing = summing(a, b)
+        print(f'Your result is {summing}')
+    elif command == 'multiplication':
+        current_number = 0
+        amount = int(input('How many numbers do you want to multiply? '))
+        result = 1
+        for y in range(amount):
+            current_number += 1
+            number = int(input(f'Enter number {current_number}: '))
+            result *= number
+        print(f'Your multiplication result is {result}')
+    elif command == 'subtraction':
+        a = float(input('Enter the minuend: '))
+        b = float(input('Enter the subtrahend: '))
+        difference = subtraction(a, b)
+        print(f'The result of subtraction is {difference}')
+    elif command == "?":
+        print("""addition
+          subtraction
+          multiplication
+          division
+          exponentiation
+          root extraction
+          percentage calculation
+          logarithms
+          intersection point of two lines
+          prime numbers
+          gcd
+          lcm""")
+    elif command == "division":
+        divisor = float(input('Enter the divisor: '))
+        amount = int(input('Enter how many numbers you want to divide by this number: '))
+        z = 0
+        for x in range(1, amount):
+            z += 1
+            y = float(input(f'write a {z}. number that you want to devide by '))
+            divisor /= y
+
+        print(f'The result of the division is: {divisor}')
     else:
-        print('cos slaba komenda')
+        print('Something is wrong with the command')
 
+input('Press enter to exit')
 
-
-
-input('nacisnij enter zeby zakonczyc')
 
 
 
