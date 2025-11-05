@@ -68,7 +68,7 @@ if command in commands:
         divisor = float(input('Enter the divisor: '))
         amount = int(input('Enter how many numbers you want to divide by this number: '))
         z = 0
-        for x in range(1, amount):
+        for x in range(1, amount+1):
             z += 1
             y = float(input(f'write a {z}. number that you want to devide by '))
             divisor /= y
