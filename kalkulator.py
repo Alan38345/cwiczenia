@@ -33,14 +33,14 @@ def exponentiation(a, b):
 answer = 'yes'
 
 while answer == 'yes':
-    command = input('write a command ')
+    command = input('write a command (if you dont know any commands write "?" ')
     if command in commands:
 
         if command == "?":
             print("""
                 addition
                 subtraction
-                 multiplication
+                multiplication
                 division
                 exponentiation
                 root extraction
@@ -70,20 +70,7 @@ while answer == 'yes':
             b = float(input('Enter the subtrahend: '))
             difference = subtraction(a, b)
             print(f'The result of subtraction is {difference}')
-        elif command == "?":
-            print("""
-            addition
-            subtraction
-            multiplication
-            division
-            exponentiation
-            root extraction
-            percentage calculation
-            logarithms
-            intersection point of two lines
-            prime numbers
-            gcd
-            lcm""")
+
         elif command == "division":
             divisor = float(input('Enter the divisor: '))
             amount = int(input('Enter how many numbers you want to divide by this number: '))
@@ -96,10 +83,10 @@ while answer == 'yes':
                     sys.exit("nawet nie probuj gagatku")
                     divisor /= y
                     print(f'The result of the division is: {divisor}')
-        else:
-            print('Something is wrong with the command')
-        answer = ''
-        answer = input('Do you want to continue?')
+    else:
+        print('Something is wrong with the command')
+    answer = ''
+    answer = input('Do you want to continue? ')
 
 input('Press enter to exit')
 
