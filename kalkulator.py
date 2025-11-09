@@ -2,7 +2,7 @@ import sys
 
 
 commands = [
-    "addition"
+    "addition",
     "summing",
     "subtraction",
     "multiplication",
@@ -51,13 +51,8 @@ while answer == 'yes':
                 prime numbers
                 gcd
                 lcm""")
-        if command == 'summing':
-            a = float(input('Provide the first addend: '))
-            b = float(input('Provide the second addend: '))
-            summing(a, b)
-            summing = summing(a, b)
-            print(f'Your result is {summing}')
-        elif command == 'multiplication':
+
+        if command == 'multiplication':
             current_number = 0
             amount = int(input('How many numbers do you want to multiply? '))
             result = 1
@@ -71,6 +66,17 @@ while answer == 'yes':
             b = float(input('Enter the subtrahend: '))
             difference = subtraction(a, b)
             print(f'The result of subtraction is {difference}')
+        elif command == 'addition':
+            a = int(input('how many numbers do you want to add together? '))
+            b = float(input('write the 1. number '))
+            for x in range(1, a):
+
+                c = float(input(f'write the {x+1}. number '))
+                b += c
+            print(f'the result is {b} ')
+
+
+
 
         elif command == "division":
             divisor = float(input('Enter the divisor: '))
