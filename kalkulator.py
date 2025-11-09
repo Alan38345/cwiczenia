@@ -2,6 +2,7 @@ import sys
 
 
 commands = [
+    "addition"
     "summing",
     "subtraction",
     "multiplication",
