@@ -19,6 +19,5 @@ def operation(a):
             result /= numbers
 
     return result
-wynik = operation(input("jakie dzialanie chcesz wykonac"))
-print(wynik)
+
 
