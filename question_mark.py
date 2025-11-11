@@ -1,4 +1,4 @@
-def quest:
+def quest():
     print("""
                     addition
                     subtraction

@@ -1,4 +1,7 @@
 import sys
+from operation import operation
+from question_mark import quest
+from structure import structure
 
 
 commands = [
@@ -19,25 +22,6 @@ commands = [
 ]
 
 
-def question_mark ():
-    print("""
-                    addition
-                    subtraction
-                    multiplication
-                    division
-                    exponentiation
-                    root extraction
-                    percentage calculation
-                    logarithms
-                    intersection point of two lines
-                    prime numbers
-                    gcd
-                    lcm""")
-
-
-
-
-
 
 answer = 'yes'
 secque = 'no'
@@ -48,29 +32,10 @@ while True:
         command = input('write a command (if you dont know any commands write "?" ')
         if command in commands:
             if command == "?":
-                print("""
-                    addition
-                    subtraction
-                    multiplication
-                    division
-                    exponentiation
-                    root extraction
-                    percentage calculation
-                    logarithms
-                    intersection point of two lines
-                    prime numbers
-                    gcd
-                    lcm""")
-
+                quest()
             if command == 'multiplication':
-                current_number = 0
-                amount = int(input('How many numbers do you want to multiply? '))
-                result = 1
-                for y in range(amount):
-                    current_number += 1
-                    number = int(input(f'Enter number {current_number}: '))
-                    result *= number
-                print(f'Your multiplication result is {result}')
+               structure("*")
+
             elif command == 'subtraction':
                 a = int(input("how many numbers do you want to substract from another?"))
                 result = float(input("enter the minuend"))
