@@ -19,18 +19,26 @@ commands = [
 ]
 
 
-def summing(a, b):
-    total = a + b
-    return total
-def subtraction(a, b):
-    difference = a - b
-    return difference
-def division(a, b):
-    quotient = a / b
-    return quotient
-def exponentiation(a, b):
-    power = a ** b
-    return power
+def question_mark ():
+    print("""
+                    addition
+                    subtraction
+                    multiplication
+                    division
+                    exponentiation
+                    root extraction
+                    percentage calculation
+                    logarithms
+                    intersection point of two lines
+                    prime numbers
+                    gcd
+                    lcm""")
+
+
+
+
+
+
 answer = 'yes'
 secque = 'no'
 
