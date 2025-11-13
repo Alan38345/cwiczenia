@@ -1,8 +1,8 @@
-def operation(a):
+def op(a, b):
     amount = int(input("How many numbers does your action have? "))
-    result = float(input("what is your first number of the operation? "))
     for x in range(amount):
-        numbers = float(input(f"Write the {x+2}. number: "))
+        numbers = float(input(f"Write the {x+1}. number: "))
+        result = b
         if a == '*':
             result *= numbers
 
@@ -21,5 +21,3 @@ def operation(a):
             result /= numbers
 
     return result
-
-
