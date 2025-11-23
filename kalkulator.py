@@ -4,7 +4,7 @@ from question_mark import quest
 from power import power
 from differentop import op
 from difpower import difpower
-
+from addition import addition
 
 commands = [
     "addition",
@@ -38,8 +38,9 @@ if command in commands:
         print(f"the result is {result}")
 
     elif command == 'addition':
-        result = operation("+")
-        print(f"the result is {result}")
+        numbers = int(input('how many numbers does your addition has?'))
+        result = addition(numbers)
+        print(f'Result of your addition is:{result}')
     elif command == "division":
         result = operation("/")
         print(f"the result is {result}")
