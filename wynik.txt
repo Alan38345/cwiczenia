@@ -1,0 +1,1 @@
+5 jest liczbą pierwszą

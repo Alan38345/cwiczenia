@@ -4,7 +4,6 @@ if help == 'help':
     print('stop - to stop the car')
     print('quit - to exit')
 else:
-    print('i dont understand the command')
 komenda = input()
 
 if komenda == 'start':

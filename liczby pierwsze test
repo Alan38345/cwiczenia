@@ -1,0 +1,11 @@
+from funkcja_na_1_liczbe_pierw import spr
+def liczb_pierwsz_test():
+    assert spr(3) is True
+    assert spr(3) is True
+    assert spr(4) is False
+    assert spr(1) is False
+    assert spr(-1) is False
+    assert spr(-2) is False
+    assert spr(5) is True
+    print("chyba dziala")
+liczb_pierwsz_test()
