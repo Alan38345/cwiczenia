@@ -1,0 +1,2 @@
+def walidacja(x,y):
+    
